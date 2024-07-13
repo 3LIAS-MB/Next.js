@@ -4,6 +4,11 @@ GET http://localhost:3000/api/users
 ### Creando datos
 POST http://localhost:3000/api/users
 
+{
+    "nombre": "Carlos",
+    "apellido": "Perez"
+}
+
 ### Actualizando datos
 PUT http://localhost:3000/api/users
 

@@ -1,5 +1,9 @@
 "use client";
 import Link from "next/link";
+// como 'params' está en el elemento que los contiene,
+// no puede usarse desde las props de este fichero,
+// por lo que es util usar el hook useParams para usarlo
+import { useParams } from "next/navigation";
 
 // RCC -> React Client Compomemt
 export default function PostCard({ post }) {

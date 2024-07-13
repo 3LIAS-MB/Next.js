@@ -1,0 +1,12 @@
+### Obteniendo datos
+GET http://localhost:3000/api/users
+
+### Creando datos
+POST http://localhost:3000/api/users
+
+### Actualizando datos
+PUT http://localhost:3000/api/users
+
+### Eliminando datos
+DELETE http://localhost:3000/api/users
+

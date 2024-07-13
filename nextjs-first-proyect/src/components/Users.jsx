@@ -1,4 +1,5 @@
-"use client"
+// "use client"
+// El componente link es un componente servidor
 import Link from "next/link";
 
 function Users({ users }) {

@@ -1,6 +1,10 @@
 // This is your Prisma schema file,
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
+// Propósito: Es el archivo principal donde defines el esquema de tu base de datos. Aquí describes
+// los modelos, las relaciones entre ellos y cualquier configuración relacionada con la base de datos.
+
+
 generator client {
   provider = "prisma-client-js"
 }
@@ -8,4 +12,11 @@ generator client {
 datasource db {
   provider = "sqlite"
   url      = env("DATABASE_URL")
+}
+
+model Task {
+  id Int @id @default(autoincrement())
+  title String
+  description String?
+  createAt DateTime @default(now())
 }

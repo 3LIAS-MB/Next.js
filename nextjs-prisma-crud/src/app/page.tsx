@@ -17,6 +17,13 @@ async function loadTask() {
   return tasks
 }
 
+// revalidate -> Guardar en memoria caché los datos para que
+// carguen más rápido ya que está procesando desde el backend
+export const revalidate = 60;
+// siempre va a obviar la memoria caché 
+// y va a volver a refrescar a página
+export const dynamic = 'force-dynamic'
+
 async function HomePage() {
   const tasks = await loadTask()
   console.log(tasks)

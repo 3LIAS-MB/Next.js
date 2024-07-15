@@ -1,0 +1,23 @@
+### OBTENIENDO TODAS LAS TAREAS
+GET http://localhost:3000/api/tasks
+
+### OBTENIENDO UNA TAREA EN ESPECIFICO
+GET http://localhost:3000/api/tasks/5
+
+### ACTUALIZANDO TAREA
+PUT  http://localhost:3000/api/tasks/5
+
+{ 
+    "description": "usando tailwind y desplegandolo en vercel"
+}   
+
+### CREAR TAREA COMPLETA
+POST  http://localhost:3000/api/tasks
+
+{
+    "title": "Mi tercer tarea",
+    "description": "esta es mi tercer tarea"
+}
+
+### ELIMINAND O
+DELETE  http://localhost:3000/api/tasks/1

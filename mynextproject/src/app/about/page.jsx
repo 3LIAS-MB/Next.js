@@ -17,7 +17,7 @@ export default function AboutPage() {
       <h1>About</h1>
       <p>
         eligendi ipsum aspernatur cumque natus debitis soluta magnam? Quos,
-        adipisci. Quis, magni doloremque architecto saepe consequatur ut
+        adipisci. Quis, magni doloremque darchitecto saepe consequatur ut
         molestiae quas deserunt praesentium deleniti eum ullam repellat quod
         velit? Impedit obcaecati quod explicabo, ducimus, eaque neque eveniet
         distinctio incidunt laborum officia porro. Quibusdam, suscipit facere?

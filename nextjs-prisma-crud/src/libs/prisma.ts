@@ -1,4 +1,4 @@
-import { PrismaClient } from "@prisma/client/extension";
+import { PrismaClient } from "@prisma/client";
 
 // Este objeto prisma tiene propiedades, entre ellas 'task' que hace referencia
 // a las tablas de tareas. Puedo buscar datos, crear, actualizar, eliminar

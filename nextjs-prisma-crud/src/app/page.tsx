@@ -1,4 +1,3 @@
-import axios from "axios"
 import { prisma } from "@/libs/prisma"
 import TaskCard from "@/components/TaskCard"
 
@@ -8,7 +7,7 @@ async function loadTask() {
 
   // al ser componente servidor (codigo de backend)
   // no sabe, nadie le completa esa ruta.
-  // -> Extra los datos desde esta ruta. Petición http.
+  // -> Extrae los datos desde esta ruta. Petición http.
   // const res = await axios.get('http://localhost:3000/api/tasks')
 
   // Extrae los datos desde la base de datos
@@ -17,16 +16,19 @@ async function loadTask() {
   return tasks
 }
 
-// revalidate -> Guardar en memoria caché los datos para que
-// carguen más rápido ya que está procesando desde el backend
+// revalidate -> Configura el tiempo de revalidación de la memoria caché para los datos.
+// Este valor se expresa en segundos y determina cuánto tiempo los datos serán
+// considerados frescos. Pasado este tiempo, los datos serán revalidados al siguiente
+// acceso, mejorando la performance al servir datos almacenados en caché.
 export const revalidate = 60;
+
 // siempre va a obviar la memoria caché 
 // y va a volver a refrescar a página
 export const dynamic = 'force-dynamic'
 
 async function HomePage() {
   const tasks = await loadTask()
-  console.log(tasks)
+  // console.log(tasks)
 
   return (
     <div className="gird md:grid grid-cols-2 lg:grid-cols-3 gap-3 mt-5">

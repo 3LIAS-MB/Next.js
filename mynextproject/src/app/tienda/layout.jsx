@@ -17,7 +17,7 @@ export default function TiendaLayout({ childen }) {
   return (
     <>
       <nav>
-        <h3>Seccion Tienda</h3>
+        <h1>Seccion Tienda</h1>
         <ul>
           <li>
             <Link href={"/tienda/categoria"}>Categorias</Link>

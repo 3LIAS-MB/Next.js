@@ -1,6 +1,5 @@
-import "@/components/Navbar";
-import "./globals.css";
-import Navbar from "@/components/Navbar";
+import "./globals.css"; // \src\app\globals.css
+import Navbar from "@/src/components/Navbar";
 
 export const metadata = {
   title: "Create Next App",

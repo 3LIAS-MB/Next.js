@@ -1,11 +1,12 @@
 "use client";
 // 'useForm': Utiliza un hook para identificar un formulario
-// -> nos permite manejar el evento de envie del formulario
+// -> nos permite manejar el evento de envi del formulario
 import { useForm } from "react-hook-form";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 import axios from "axios";
 
+  // { params: { id: '7' }, searchParams: {} } -> todo lo que trae
 function NewPage({ params }: { params: { id: string } }) {
   // const { handleSubmit, register, formState, watch,
   // reset, setValue, getValues, trigger } = useForm();
@@ -23,7 +24,6 @@ function NewPage({ params }: { params: { id: string } }) {
   // me da un objeto que se utiliza
   // para poder cambiar de página
   const router = useRouter();
-
   useEffect(() => {
     if (params.id) {
       axios.get(`/api/tasks/${params.id}`).then((res) => {
@@ -35,10 +35,12 @@ function NewPage({ params }: { params: { id: string } }) {
 
   const onSubmit = handleSubmit(async (data) => {
     if (params.id) {
+      // actualizando usando la api
       await axios.put(`/api/tasks/${params.id}`, data);
     } else {
       // al ser un componente cliente js o el
-      // navegador autocompleta la direccion que le falta
+      // navegador autocompleta la direccion
+      // que le falta -> creando
       await axios.post("/api/tasks", data);
     }
     router.push("/");

@@ -22,7 +22,7 @@ export default function AboutPage() {
         velit? Impedit obcaecati quod explicabo, ducimus, eaque neque eveniet
         distinctio incidunt laborum officia porro. Quibusdam, suscipit facere?
         Placeat inimi in accusamus quod, et alias ut at? Cum maiores odio
-        repellat iste cumque voluptate maxime debitis dignissimos delectus
+        repellat iste cumque voluptat e maxime debitis dignissimos delectus
         dolorum eaque sequi enim ex nesciunt earum nihil, eveniet odit minima!
         Iure eius, tempore necessitatibus, saepe, est corporis doloremque unde
         odit laborum delectus voluptatem alias harum. Aut architecto quos labore

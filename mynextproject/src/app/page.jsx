@@ -7,11 +7,13 @@ export const metadata = {
 
 export default function HomePage() {
   return (
-    // Server component
-    <section>
-      <h1>Hello world</h1>
-      {/* Client component */}
-      <Users />
-    </section>
+    // Parent container with flexbox to center child element
+    <div className="flex items-center justify-center h-screen">
+      <section className="border-2 border-rose-700 px-5 w-7/10 h-7/10 flex items-center justify-center">
+        <h1>Hello world</h1>
+        {/* Client component */}
+        <Users />
+      </section>
+    </div>
   );
 }

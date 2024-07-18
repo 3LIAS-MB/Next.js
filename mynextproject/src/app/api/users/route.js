@@ -10,7 +10,7 @@ export async function GET() {
   // extract params
   // query database
   // communite with other services
-  const res = await fetch(`https://jsonplaceholder.typicode.com/users?apikey=123${process.env.TOKEN}`);
+  const res = await fetch(`https://jsonplaceholder.typicode.com/users?apikey=${process.env.TOKEN}`);
   const data = await res.json();
 
   
@@ -20,7 +20,6 @@ export async function GET() {
 
 export async function POST(req) {
   const { nombre, apellido } = await req.json();
-  console.log(nombre, apellido)
 
   return NextResponse.json({
     message: "Creando datos!",

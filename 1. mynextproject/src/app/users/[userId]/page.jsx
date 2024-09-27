@@ -3,7 +3,7 @@
 import { useParams } from "next/navigation";
 
 function UserPage({ params }) {
-    const params = useParams()
+    params = useParams()
 
     return <div>UserPage</div>;
   }

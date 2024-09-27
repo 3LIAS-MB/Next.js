@@ -13,9 +13,9 @@ export const metadata = {
   keywords: ["tienda", "online", "ecommerce"]
 }
 
-export default function TiendaLayout({ childen }) {
+export default function TiendaLayout({ children }) {
   return (
-    <>
+    <div>
       <nav>
         <h1>Seccion Tienda</h1>
         <br />
@@ -28,8 +28,9 @@ export default function TiendaLayout({ childen }) {
           </li>
         </ul>
       </nav>
-      {childen}
-    </>
+      <br />
+      {children}
+    </div>
   );
 }
 

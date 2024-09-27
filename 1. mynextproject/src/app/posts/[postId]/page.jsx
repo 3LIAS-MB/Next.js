@@ -1,4 +1,4 @@
-import Postxd from "../page";
+import PostPages from "../page";
 // Se puede usar sin la necesidad de usar un client server
 // Suspende el componente hasta que cargue para poder mostrarlo
 import { Suspense } from "react";
@@ -26,7 +26,7 @@ async function Page({ params }) {
       <h2>Otras publicaciones</h2>
       {/* Fallback es un elemento de un jsx para poder mostrar */}
       <Suspense fallback={<div>Cargando publicaciones...</div>}>
-        <Postxd />
+        <PostPages />
       </Suspense>
     </div>
   );

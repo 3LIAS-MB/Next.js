@@ -8,7 +8,7 @@ function Users() {
 
   return (
     <>
-      <h1>Component users</h1>
+      <h1> - ComponentUsers</h1>
     </>
   );
 }

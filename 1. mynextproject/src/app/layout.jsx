@@ -3,7 +3,7 @@ import { Roboto } from "next/font/google"
 import "./global.css"
 
 export const metadata = {
-  title: "Mi tienda con Next js",
+  title: "Mi tienda con Next js - Home Page",
   description: "Esta es la pagina principal de mi tienda",
   keywords: ["tienda", "online", "ecommerce"]
 }

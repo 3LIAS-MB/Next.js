@@ -7,6 +7,7 @@ import { useParams } from "next/navigation";
 
 // RCC -> React Client Compomemt
 export default function PostCard({ post }) {
+
   return (
     <div className="bg-gray-950 p-10">
       <Link href={`/posts/${post.id}`}>
@@ -15,12 +16,15 @@ export default function PostCard({ post }) {
         </h3>
       </Link>
       <p className="text-slate-300">{post.body}</p>
+
+      <br />
+      
       <button
         onClick={() => {
           alert("Click funcionando");
         }}
       >
-        Click
+        CLICK
       </button>
     </div>
   );

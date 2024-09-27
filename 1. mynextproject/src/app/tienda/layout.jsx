@@ -3,7 +3,7 @@
 // este ya está añadido en el Layout inicial y SOLO HAY UN RootLayout. Solo uno q contiene al resto
 
 // Dentro de este Layout también podría añadir un contexto que solo
-// apliquen a las páginas que est dentro de la carpeta tienda
+// apliquen a las páginas que estan dentro de la carpeta tienda
 
 import Link from "next/link" // paquete link/componente 
 
@@ -18,6 +18,7 @@ export default function TiendaLayout({ childen }) {
     <>
       <nav>
         <h1>Seccion Tienda</h1>
+        <br />
         <ul>
           <li>
             <Link href={"/tienda/categoria"}>Categorias</Link>

@@ -15,7 +15,7 @@ export default function PostCard({ post }) {
           {post.id}. {post.title}
         </h3>
       </Link>
-      <p className="text-slate-300">{post.body}</p>
+      <p className="text-slate-300 bg">{post.body}</p>
 
       <br />
       

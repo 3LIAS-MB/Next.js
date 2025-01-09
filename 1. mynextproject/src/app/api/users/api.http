@@ -1,8 +1,8 @@
 ### Obteniendo datos
-GET http://localhost:3001/api/users
+GET http://localhost:30010/api/users
 
 ### Creando datos
-POST http://localhost:3001/api/users
+POST http://localhost:3000/api/users
 
 {
     "nombre": "Carlos",
@@ -10,8 +10,8 @@ POST http://localhost:3001/api/users
 }
 
 ### Actualizando datos
-PUT http://localhost:3001/api/users
+PUT http://localhost:3000/api/users
 
 ### Eliminando datos
-DELETE http://localhost:3001/api/users
+DELETE http://localhost:3000/api/users
 

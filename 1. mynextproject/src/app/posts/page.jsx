@@ -12,7 +12,7 @@ async function loadPost() {
 }
 
 // El hecho de que lleve async significa que ya no estamos hablando de
-// un componente basico de react sino un componente que está procesando
+// un componente basico de react sino un componente que está procesando 
 // codigo asincrono, y para que lo haga un servidor lo debe ejecutar
 
 // RSC -> Reactr Server Component

@@ -2,13 +2,22 @@ import { NextResponse } from "next/server";
 
 // route handlers params
 export async function GET(req, { params }) {
-  // Esto va a tomar la información de la URL que
-  // es un String y lo va a convertir en un objeto
-  // SearchParams devolverá una estructura conocida
-  // como MAP -> "{ 'nombre' => 'L', 'apellido' => 'S'}"
-  // Y asi es como podemos obtener las querys (lo mismo para el fronted)
-  const { searchParams } = new URL(req.url);
-  // searchParams.get('nombre') -> obtener la queary 'nombre'
+// Crea un objeto URL a partir de req.url, permitiendo acceder 
+// fácilmente a partes específicas de la URL.
+// 
+// - `searchParams`: Es una instancia de URLSearchParams, que proporciona
+//   métodos para trabajar con los parámetros de consulta (query parameters).
+//   Por ejemplo: "?nombre=L&apellido=S" se convierte en un objeto similar a un MAP.
+//   Ejemplo de uso: searchParams.get('nombre') -> 'L'
+// 
+// - `search`: Devuelve la cadena completa de los parámetros de consulta,
+//   incluyendo el signo '?'. Ejemplo: "?nombre=L&apellido=S"
+// 
+// - `pathname`: Devuelve la parte de la URL después del dominio pero
+//   sin incluir parámetros de consulta ni hash. Ejemplo: "/api/users"
+// 
+// - `host`: Devuelve el host (dominio y puerto). Ejemplo: "localhost:3000"
+const { searchParams, search, pathname, host } = new URL(req.url);
 
   const res = await fetch(
     `https://jsonplaceholder.typicode.com/users/${params.userId}`

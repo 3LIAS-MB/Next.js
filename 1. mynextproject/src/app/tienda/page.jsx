@@ -5,7 +5,8 @@ export const metadata = {
 export default function Tienda() {
   return (
     <div>
-      <h1>Tienda</h1>
+      <h1>Tienda XDDD</h1>
+
       <ul>
         <li>Producto 1</li>
         <li>Producto 2</li>

@@ -21,8 +21,10 @@ export async function GET() {
 export async function POST(req) {
   // En nextjs no es red.bady, simplemente req y lo transformamos 
   // en json, esta es la inf que nos está enviando el cliente
-  const { nombre, apellido } = await req.json();
 
+  // { nombre: 'Carlos', apellido: 'Perez' }
+  const { nombre, apellido } = await req.json();
+  
   return NextResponse.json({
     message: "Creando datos!",
   });
